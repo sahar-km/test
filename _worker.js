@@ -4,10 +4,10 @@ import { connect } from 'cloudflare:sockets';
 let userID = '302682d9-b512-4595-b9b9-b9ed836d69f9';
 
 
-const proxyIPs = ['141.147.119.139'];
+const proxyIPs = ['64.110.104.30'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
-let dohURL = 'https://dns.adguard-dns.com/dns-query'; // OR use https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg= OR https://8.8.8.8/dns-query OR https://cloudflare-dns.com/dns-query
+let dohURL = 'https://8.8.8.8/dns-query'; // OR use  https://dns.adguard-dns.com/dns-query  OR https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg= OR https://8.8.8.8/dns-query OR https://cloudflare-dns.com/dns-query
 
 let nodeId = '';
 
