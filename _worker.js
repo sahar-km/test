@@ -7,7 +7,7 @@ let userID = 'cf943265-445a-4c81-9c2d-ffa4a4a16354';
 const proxyIPs = ['43.153.80.208'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
-let dohURL = 'https://dns.adguard-dns.com/dns-query'; // OR use  https://dns.adguard-dns.com/dns-query  OR https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg= OR https://8.8.8.8/dns-query OR https://cloudflare-dns.com/dns-query
+let dohURL = 'https://melbourne-k0ypv0z4bjr2.deno.dev/1:AKA4vAAg'; // OR use  https://dns.adguard-dns.com/dns-query  OR https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg= OR https://8.8.8.8/dns-query OR https://cloudflare-dns.com/dns-query
 
 let nodeId = '';
 
