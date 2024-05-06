@@ -3,7 +3,7 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = 'cf943265-445a-4c81-9c2d-ffa4a4a16354';
+let userID = '00dc6dd8-885d-42f6-9c17-2e88bab84360';
 
 const พร็อกซีไอพีs = ['43.153.80.208'];
 
@@ -72,7 +72,7 @@ export default {
 					};
 					case `/bestip/${userID_Path}`: {
 						const headers = request.headers;
-						const url = `https://sub.xf.free.hr/auto?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
+						const url = `https://cfshr.pages.dev/auto?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
 						const bestSubConfig = await fetch(url, { headers: headers });
 						return bestSubConfig;
 					};
