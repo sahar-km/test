@@ -72,7 +72,7 @@ export default {
 					};
 					case `/bestip/${userID_Path}`: {
 						const headers = request.headers;
-						const url = `https://cfshr.pages.dev/auto?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
+						const url = `https://sub.xf.free.hr/auto?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
 						const bestSubConfig = await fetch(url, { headers: headers });
 						return bestSubConfig;
 					};
@@ -756,7 +756,7 @@ ${วเลสSec}
 	<meta name='twitter:title' content='EDtunnel - วเลส configuration and subscribe output' />
 	<meta name='twitter:description' content='Use cloudflare pages and worker severless to implement วเลส protocol' />
 	<meta name='twitter:url' content='https://${hostName}/' />
-	<meta name='twitter:image' content='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' />
+	<meta name='twitter:image' content='https://img.icons8.com/ios-filled/250/logan-paul-maverick.png' />
 	<meta property='og:image:width' content='1500' />
 	<meta property='og:image:height' content='1500' />
 
