@@ -5,7 +5,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '00dc6dd8-885d-42f6-9c17-2e88bab84360';
 
-const พร็อกซีไอพีs = ['43.153.80.208'];
+const พร็อกซีไอพีs = ['ni.radically.pro'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -725,12 +725,12 @@ ${วเลสSec}
 	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
 	// Prepare header string
 	const header = `
-<p align='center'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='图片描述' style='margin-bottom: -50px;'>
+<p align='center'><img width="250" height="250" src="https://img.icons8.com/ios-filled/250/logan-paul-maverick.png" alt="logan-paul-maverick"/>
 <b style='font-size: 15px;'>Welcome! This function generates configuration for วเลส protocol. If you found this useful, please check our GitHub project for more:</b>
 <b style='font-size: 15px;'>欢迎！这是生成 วเลส 协议的配置。如果您发现这个项目很好用，请查看我们的 GitHub 项目给我一个star：</b>
-<a href='https://github.com/3Kmfi6HP/EDtunnel' target='_blank'>EDtunnel - https://github.com/3Kmfi6HP/EDtunnel</a>
-<iframe src='https://ghbtns.com/github-btn.html?user=USERNAME&repo=REPOSITORY&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
-<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>วเลส 节点订阅连接</a>
+<a href='https://github.com/NiREvil/Emotional-Damage' target='_blank'>Freedom - https://github.com/NiREvil/Emotional-Damage</a>
+<iframe src='https://ghbtns.com/github-btn.html?user=NiREvil&repo=Emotional-Damage&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
+<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>วเลส 节Sub link addresses</a>
 <a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows 节点订阅连接</a>
 <a href='${clash_link}' target='_blank'>Clash 节点订阅连接</a>
 <a href='${subbestip}' target='_blank'>优选IP自动节点订阅</a>
@@ -743,7 +743,7 @@ ${วเลสSec}
 	const htmlHead = `
   <head>
 	<title>EDtunnel: วเลส configuration</title>
-	<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/3Kmfi6HP/EDtunnel if you found it useful!'>
+	<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/NiREvil/Emotional-Damage if you found it useful!'>
 	<meta name='keywords' content='EDtunnel, cloudflare pages, cloudflare worker, severless'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta property='og:site_name' content='EDtunnel: วเลส configuration' />
