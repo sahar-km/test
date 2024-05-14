@@ -1,7 +1,7 @@
 # EDtunnel
 
 <p align="left">
-  <br><img src="https://github.com/NiREvil/Emotional-Damage/assets/126243832/66c9bdfb-9e74-4a91-a7d3-9a180450c690" width="320px">
+  <br><img src="sn://subscription?eNpjYGBgCA5WcM_8wsiAAAcYM0pKCoqt9PWLEsv10jNLMkqTSotTi5Lz80pS80r0kvNz9f0yg1zLMnP0y3JSi4v1cxMz8_SLS5P0g4NDMnNTgWY0AgBf0Btw" width="320px">
 </p>
 
 
