@@ -6,7 +6,7 @@
 
 
 ###### Huge thanks to Dear 3KmFi6HP
-[![Repository](https://img.shields.io/badge/View%20on-GitHub-blue.svg)](https://github.com/3Kmfi6HP/EDtunnel)
+[![Repository](https://img.shields.io/badge/View%20on-GitHub-blue.svg)](sn://subscription?eNpjYGBgCA5WcM_8wsiAAAcYM0pKCoqt9PWLEsv10jNLMkqTSotTi5Lz80pS80r0kvNz9f0yg1zLMnP0y3JSi4v1cxMz8_SLS5P0g4NDMnNTgWY0AgBf0Btw)
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 ## Table of Contents
 - [Deploy in pages.dev](#Deploy-in-pages.dev)
