@@ -137,8 +137,8 @@
         },
         {
             "type": "wireguard",
-            "server": "wa.radicalization.ir",
-            "server_port": 908,
+            "server": "engage.radicalization.ir",
+            "server_port": 2408,
             "local_address": [
                 "172.16.0.2\/32",
                 "2606:4700:110:87ca:a64e:184a:4979:243a\/128"
