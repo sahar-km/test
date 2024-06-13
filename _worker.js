@@ -96,7 +96,7 @@ export default {
 						});
 					}
 					default:
-						url.hostname = 'piped.kavin.rocks';
+						url.hostname = 'www.speedtest.net';
 						url.protocol = 'https:';
 						request = new Request(url, request);
 						return await fetch(request);
