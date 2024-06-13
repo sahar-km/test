@@ -4,7 +4,7 @@ import { connect } from 'cloudflare:sockets';
 let userID = '00dc6dd8-885d-42f6-9c17-2e88bab84360';
 
 
-const proxyIPs = ['130.61.239.203'];//'193.122.6.27', '193.122.61.167'
+const proxyIPs = ['130.162.54.31'];//'193.122.6.27', '193.122.61.167'
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
 let dohURL = 'https://cloudflare-dns.com/dns-query'; // OR use. https://melbourne-k0ypv0z4bjr2.deno.dev/1:AKA4vAAg. OR  https://dns.adguard-dns.com/dns-query  OR https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg= OR https://8.8.8.8/dns-query OR https://cloudflare-dns.com/dns-query
