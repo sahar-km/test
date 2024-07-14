@@ -1,6 +1,6 @@
 //profile-title: base64:d2FycCBPTiB3YXJw
 //profile-update-interval: 24
-//subscription-userinfo: upload=0; download=1073741824; total=6073741824; expire=1721115000
+//subscription-userinfo: upload=5368709120; download=66571993088; total=107374182400; expire=1731335400
 //support-url:  https://t.me/F_NiREvil
 //profile-web-page-url: https://github.com/NiREvil
 
@@ -132,8 +132,8 @@
         "2606:4700:110:8c91:4063:21d0:7dd5:f218/128"
       ],
       "private_key": "AJ0si9MKGCtoC/NHwKc8G0MADbTPl/1M7KNWvM24W1g=",
-      "server": "162.159.195.149:5279",
-      "server_port": 939,
+      "server": "162.159.195.149",
+      "server_port": 5279,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "AAAA",
       "mtu": 1280,
