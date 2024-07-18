@@ -14,7 +14,7 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "tcp://185.228.168.9",
+        "address": "https://wikimedia-dns.org/dns-query",
         "address_resolver": "dns-direct"
       },
       {
@@ -24,7 +24,7 @@
       },
       {
         "tag": "dns-direct",
-        "address": "tcp://185.228.168.9",
+        "address": "https://wikimedia-dns.org/dns-query",
         "address_resolver": "dns-local",
         "detour": "direct"
       },
@@ -75,6 +75,7 @@
       "tag": "tun-in",
       "mtu": 9000,
       "inet4_address": "172.19.0.1/28",
+      "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
@@ -127,8 +128,8 @@
         "2606:4700:110:89a8:fd64:26c3:e66c:aeb5/128"
       ],
       "private_key": "QALMq3+ZfwxtIxXFVy3Drs0QeIbTnSoWOYxJM9ajemk=",
-      "server": "162.159.192.36",
-      "server_port": 908,
+      "server": "188.114.98.131",
+      "server_port": 894,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": [55,160,170],
       "mtu": 1300,
@@ -145,8 +146,8 @@
         "2606:4700:110:8c7e:84d3:cc39:2b67:d765/128"
       ],
       "private_key": "YPhnBcnEhb2jghr943+/sVz76VwQUDCQgPWeX000dFc=",
-      "server": "2606:4700:d1::27d0:ac63:30e2:5dfb",
-      "server_port": 864,
+      "server": "2606:4700:d1::8074:fb72:b85e:1f41",
+      "server_port": 8854,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": [192,186,142],
       "mtu": 1280
