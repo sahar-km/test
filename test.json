@@ -11,92 +11,80 @@
     "timestamp": true
   },
   "dns": {
-    "servers": [
-      {
-        "tag": "dns-remote",
-        "address": "https://wikimedia-dns.org/dns-query",
-        "address_resolver": "dns-direct"
-      },
-      {
-        "tag": "dns-trick-direct",
-        "address": "https://sky.rethinkdns.com/",
-        "detour": "direct-fragment"
-      },
-      {
-        "tag": "dns-direct",
-        "address": "https://wikimedia-dns.org/dns-query",
-        "address_resolver": "dns-local",
-        "detour": "direct"
-      },
-      {
-        "tag": "dns-local",
-        "address": "local",
-        "detour": "direct"
-      },
-      {
-        "tag": "dns-block",
-        "address": "rcode://success"
-      }
-    ],
-    "rules": [
-      {
-        "domain": "cp.cloudflare.com",
-        "server": "dns-remote",
-        "rewrite_ttl": 3000
-      },
-      {
-        "rule_set": [
-          "geoip-ir",
-          "geosite-ir"
+        "servers": [
+            {
+                "address": "tcp://185.228.168.9",
+                "address_resolver": "dns-direct",
+                "strategy": "prefer_ipv4",
+                "tag": "dns-remote"
+            },
+            {
+                "address": "8.8.8.8",
+                "address_resolver": "dns-local",
+                "strategy": "prefer_ipv4",
+                "detour": "direct",
+                "tag": "dns-direct"
+            },
+            {
+                "address": "local",
+                "tag": "dns-local"
+            },
+            {
+                "address": "rcode://success",
+                "tag": "dns-block"
+            }
         ],
-        "server": "dns-direct"
-      }
-    ],
-    "final": "dns-remote",
-    "static_ips": {
-      "sky.rethinkdns.com": [
-        "188.114.96.2",
-        "188.114.97.2",
-        "2a06:98c1:3123::",
-        "2a06:98c1:3122::",
-        "104.17.147.22",
-        "104.17.148.22",
-        "188.114.96.3",
-        "188.114.97.3",
-        "2a06:98c1:3121::6",
-        "2a06:98c1:3120::6"
-      ]
+        "rules": [
+            {
+                "domain_suffix": ".ir",
+                "server": "dns-direct",
+                "domain": [
+                    "ipw.nscl.ir"
+                ]
+            },
+            {
+                "disable_cache": true,
+                "rule_set": [
+                    "geosite-category-ads-all",
+                    "geosite-malware",
+                    "geosite-phishing",
+                    "geosite-cryptominers"
+                ],
+                "server": "dns-block"
+            }
+        ],
+        "independent_cache": true
     },
-    "independent_cache": true
-  },
-  "inbounds": [
-    {
-      "type": "tun",
-      "tag": "tun-in",
-      "mtu": 9000,
-      "inet4_address": "172.19.0.1/28",
-      "inet6_address": "fdfe:dcba:9876::1/126",
-      "auto_route": true,
-      "strict_route": true,
-      "endpoint_independent_nat": true,
-      "stack": "mixed",
-      "sniff": true,
-      "sniff_override_destination": true
+    "inbounds": [
+        {
+            "type": "direct",
+            "tag": "dns-in",
+            "listen": "127.0.0.1",
+            "listen_port": 6450,
+            "override_address": "8.8.8.8",
+            "override_port": 53
+        },
+        {
+            "type": "tun",
+            "tag": "tun-in",
+            "inet4_address": "172.19.0.1/28",
+            "inet6_address": "fdfe:dcba:9876::1/126",
+            "mtu": 9000,
+            "auto_route": true,
+            "strict_route": true,
+            "endpoint_independent_nat": true,
+            "stack": "mixed",
+            "sniff": true,
+            "sniff_override_destination": true
+        },
+        {
+            "type": "mixed",
+            "tag": "mixed-in",
+            "listen": "127.0.0.1",
+            "listen_port": 2334,
+            "sniff": true,
+            "sniff_override_destination": true
     },
-    {
-      "type": "mixed",
-      "tag": "mixed-in",
-      "listen": "127.0.0.1",
-      "listen_port": 2334,
-      "sniff": true,
-      "sniff_override_destination": true
-    },
-    {
-      "type": "direct",
-      "tag": "dns-in",
-      "listen": "127.0.0.1",
-      "listen_port": 6450
-    }
   ],
   "outbounds": [
     {
@@ -116,7 +104,7 @@
         "WARP-IR § 0",
         "WARP-DE § 1"
       ],
-      "url": "http://connectivitycheck.gstatic.com/generate_204",
+      "url": "https://www.gstatic.com/generate_204",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
@@ -125,17 +113,18 @@
       "tag": "WARP-IR § 0",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:89a8:fd64:26c3:e66c:aeb5/128"
+        "2606:4700:110:8527:4556:5543:b6ca:b7f2/128"
       ],
-      "private_key": "QALMq3+ZfwxtIxXFVy3Drs0QeIbTnSoWOYxJM9ajemk=",
-      "server": "188.114.98.131",
-      "server_port": 894,
+      "private_key": "+MDM9F4P9pM9LfIvEtvUou3J9pZ8KMkW1lOXhr8SVnI=",
+      "server": "ipw.nscl.ir",
+      "server_port": 955,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [55,160,170],
-      "mtu": 1300,
-      "fake_packets": "10-20",
-      "fake_packets_size": "20-60",
-      "fake_packets_delay": "5-10"
+      "reserved": "5nh5",
+      "mtu": 1306,
+       "fake_packets_mode": "m5",
+      "fake_packets": "25-30",
+      "fake_packets_size": "10-30",
+      "fake_packets_delay": "10-30"
     },
     {
       "type": "wireguard",
@@ -143,14 +132,14 @@
       "detour": "WARP-IR § 0",
       "local_address": [
         "172.16.0.2/24",
-        "2606:4700:110:8c7e:84d3:cc39:2b67:d765/128"
+        "2606:4700:110:8489:bd31:4efa:1a41:5744/128"
       ],
-      "private_key": "YPhnBcnEhb2jghr943+/sVz76VwQUDCQgPWeX000dFc=",
-      "server": "2606:4700:d1::8074:fb72:b85e:1f41",
-      "server_port": 8854,
+      "private_key": "6LwadIWYvaC/qN7RgrFjaFRgRKljfMCCk+NMdrXAM1I=",
+      "server": "ipw.nscl.ir",
+      "server_port": 955,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [192,186,142],
-      "mtu": 1280
+      "reserved": "Cd2T",
+      "mtu": 1306
     },
     {
       "type": "dns",
@@ -165,8 +154,8 @@
       "tag": "direct-fragment",
       "tls_fragment": {
         "enabled": true,
-        "size": "5-10",
-        "sleep": "1-5"
+        "size": "20-40",
+        "sleep": "2-4"
       }
     },
     {
