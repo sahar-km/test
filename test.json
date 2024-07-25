@@ -193,10 +193,10 @@
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "lcKa",
       "mtu": 1340,
-       "fake_packets_mode": "m4",
-      "fake_packets": "40-80",
-      "fake_packets_size": "40-100",
-      "fake_packets_delay": "4-8"
+      "fake_packets_mode": "m3",
+      "fake_packets": "25-30",
+      "fake_packets_size": "10-30",
+      "fake_packets_delay": "10-30"
     },
     {
       "type": "wireguard",
@@ -213,9 +213,9 @@
       "reserved": "RG/l",
       "mtu": 1306,
       "fake_packets_mode": "m4",
-      "fake_packets": "40-80",
-      "fake_packets_size": "40-100",
-      "fake_packets_delay": "4-8"
+      "fake_packets": "25-30",
+      "fake_packets_size": "10-30",
+      "fake_packets_delay": "10-30"
     },
     {
       "type": "wireguard",
@@ -231,10 +231,10 @@
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "Cd2T",
       "mtu": 1306,
-       "fake_packets_mode": "m4",
-      "fake_packets": "40-80",
-      "fake_packets_size": "40-100",
-      "fake_packets_delay": "4-8"
+      "fake_packets_mode": "m5",
+      "fake_packets": "25-30",
+      "fake_packets_size": "10-30",
+      "fake_packets_delay": "10-30"
     },
     {
       "type": "wireguard",
@@ -250,10 +250,10 @@
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "c9vC",
       "mtu": 1306,
-       "fake_packets_mode": "m6",
+      "fake_packets_mode": "m6",
       "fake_packets": "25-30",
       "fake_packets_size": "10-30",
-      "fake_packets_delay": "4-8"
+      "fake_packets_delay": "10-30"
     },
     {
       "type": "wireguard",
@@ -272,7 +272,7 @@
       "fake_packets_mode": "h_30",
       "fake_packets": "25-30",
       "fake_packets_size": "10-30",
-      "fake_packets_delay": "4-8"
+      "fake_packets_delay": "10-30"
     },
     {
       "type": "wireguard",
@@ -291,7 +291,7 @@
       "fake_packets_mode": "g_10_20_30",
       "fake_packets": "25-30",
       "fake_packets_size": "10-30",
-      "fake_packets_delay": "1-3"
+      "fake_packets_delay": "10-30"
     },
  {
       "type": "wireguard",
@@ -329,7 +329,7 @@
       "fake_packets_mode": "h_50",
       "fake_packets": "25-30",
       "fake_packets_size": "10-30",
-      "fake_packets_delay": "1-4"
+      "fake_packets_delay": "10-30"
     },
     {
       "type": "dns",
