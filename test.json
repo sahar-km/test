@@ -253,7 +253,7 @@
        "fake_packets_mode": "m6",
       "fake_packets": "25-30",
       "fake_packets_size": "10-30",
-      "fake_packets_delay": "10-30"
+      "fake_packets_delay": "4-8"
     },
     {
       "type": "wireguard",
@@ -272,7 +272,7 @@
       "fake_packets_mode": "h_30",
       "fake_packets": "25-30",
       "fake_packets_size": "10-30",
-      "fake_packets_delay": "10-30"
+      "fake_packets_delay": "4-8"
     },
     {
       "type": "wireguard",
@@ -283,7 +283,7 @@
         "2606:4700:110:8630:1cfa:2c27:a320:34cf/128"
       ],
       "private_key": "wHIM7G1x3zNXbquNJxO0V1248I02jsgnJF/KSfDJXUY=",
-      "server": "ipw.bachebiapain.ir",
+      "server": "162.159.192.151",
       "server_port": 928,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "nA6q",
@@ -291,7 +291,7 @@
       "fake_packets_mode": "g_10_20_30",
       "fake_packets": "25-30",
       "fake_packets_size": "10-30",
-      "fake_packets_delay": "10-30"
+      "fake_packets_delay": "1-3"
     },
  {
       "type": "wireguard",
@@ -329,7 +329,7 @@
       "fake_packets_mode": "h_50",
       "fake_packets": "25-30",
       "fake_packets_size": "10-30",
-      "fake_packets_delay": "10-30"
+      "fake_packets_delay": "1-4"
     },
     {
       "type": "dns",
