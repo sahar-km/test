@@ -40,9 +40,7 @@
     ],
     "rules": [
       {
-        "domain": [
-          "wikimedia-dns.org",
-        ],
+        "domain": "wikimedia-dns.org",
         "server": "dns-direct"
       },
       {
